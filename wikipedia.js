@@ -16,7 +16,6 @@ async function start(keyword = null) {
     }
   })
 
-console.log(obj);
   // do console.log here for checking
     // ex console.log(obj);
 }
