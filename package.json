@@ -1,0 +1,23 @@
+{
+  "name": "scraping",
+  "version": "1.0.0",
+  "description": "just a boredom project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreastihor/scraper.git"
+  },
+  "author": "Andreas Tihor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreastihor/scraper/issues"
+  },
+  "homepage": "https://github.com/andreastihor/scraper#readme",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "request": "^2.88.0"
+  }
+}
