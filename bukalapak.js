@@ -51,6 +51,11 @@ async function getAllLinks(page,totalItem) {
   return links
 }
 
+
+async function getRating(url) {
+
+}
+
 async function start(username) {
 
   const{page, browser} = await launchBrowser()
@@ -61,7 +66,7 @@ async function start(username) {
   const totalItem = await getTotalItem(page)
   await page.goto(`https://www.bukalapak.com/u/${username}?keywords=&sort=bestselling`)
   const url = await getAllLinks(page,totalItem)
-  const items = await getRating
+  const items = await getRating(url)
   await browser.close()
 }
 
