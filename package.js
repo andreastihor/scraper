@@ -1,6 +1,7 @@
 let request = require('request')
 const Promise = require('bluebird')
 const cheerio = require('cheerio')
+
 request = request.defaults({
   followAllRedirects: true,
   headers: {
@@ -11,10 +12,11 @@ request = request.defaults({
                   'Safari/537.36',
   }
 })
-const fs = require('fs')
+
 const get = Promise.promisify(request.get)
 const post = Promise.promisify(request.post)
 const puppeteer = require('puppeteer')
+
 async function launchBrowser() {
   const browser = await puppeteer.launch({
     headless: false,
@@ -43,7 +45,6 @@ module.exports = {
   get,
   post,
   cheerio,
-  fs,
   request,
   launchBrowser,
 }
