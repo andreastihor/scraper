@@ -1,5 +1,5 @@
 const {launchBrowser,get, cheerio } = require('./package')
-
+// TODO: scrap the 1 without next button
 async function scrapHeader(page, browser) {
   console.log("Getting Shop Header Info...");
 
